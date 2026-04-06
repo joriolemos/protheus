@@ -10,7 +10,7 @@ import time
 import pyautogui
 
 # URL do TOTVS WebApp
-url_totvs = "https://orthoheadinstrumentais119660.protheus.cloudtotvs.com.br:4010/webapp/#/login"
+url_totvs = "https://orthoheadinstrumentais119660.protheus.cloudtotvs.com.br:4010/webapp/?P=SIGAMDI&E=PROD"
 
 # Caminho do navegador (exemplo com Edge, ajuste se necessário)
 caminho_edge = r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
@@ -21,21 +21,22 @@ try:
     print("TOTVS WebApp aberto com sucesso!")
 
     # Aguarda alguns segundos para carregar a pagina inicial do app
-    time.sleep(3)
+    time.sleep(20)
+
 
     # Pressiona Tab 3 vezes de uma vez
-    pyautogui.press("tab", presses=3, interval=0.5)
+    # pyautogui.press("tab", presses=1, interval=1.0)
 
     # Pressiona Enter
-    pyautogui.press("enter")
+    # pyautogui.press("enter")
     
     # Aguarda alguns segundos para carregar a pagina boas-vindas
-    time.sleep(10)
+    #   time.sleep(20)
     
     pyautogui.write("jlemos")
 
     # Pressiona Tab 3 vezes de uma vez
-    pyautogui.press("tab", presses=1, interval=0.5)
+    pyautogui.press("tab", presses=1, interval=1.0)
     
     pyautogui.write("Jo@0509_rio")
 
@@ -46,11 +47,11 @@ try:
     time.sleep(8)
 
     # Pressiona Tab 3 vezes de uma vez
-    pyautogui.press("tab", presses=9, interval=0.5)
+    pyautogui.press("tab", presses=9, interval=1.0)
     
     pyautogui.write("28")
     
-    pyautogui.press("tab", presses=5, interval=0.5)
+    pyautogui.press("tab", presses=5, interval=1.0)
 
     # Pressiona Enter
     pyautogui.press("enter")
@@ -58,7 +59,7 @@ try:
     time.sleep(5)
     
     # Pressiona Tab 3 vezes de uma vez
-    pyautogui.press("tab", presses=1, interval=0.5)
+    pyautogui.press("tab", presses=1, interval=1.0)
     
     pyautogui.write("TECA300")
     
