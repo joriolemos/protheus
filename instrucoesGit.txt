@@ -1,0 +1,10 @@
+01
+Inicializar repositório localNo terminal, vá até a pasta do projeto e execute 'git init' caso ainda não esteja versionada.
+02
+Adicionar arquivos ao controleUse 'git add .' para incluir todos os arquivos modificados ou 'git add nome_do_arquivo' para arquivos específicos.
+03
+Criar commit localExecute 'git commit -m "mensagem"' para salvar as alterações no histórico local.
+04
+Vincular ao repositório remotoSe ainda não estiver vinculado, use 'git remote add origin URL_DO_REPOSITORIO' com a URL do GitHub.
+05
+Enviar alterações ao GitHubExecute 'git push origin main' (ou o nome da branch que você está usando) para atualizar o repositório remoto.
