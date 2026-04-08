@@ -1,0 +1,1 @@
+Esse repositório compartilha códigos em python para que utiliza os módulos de Prestadores de Serviço e Metrologia no sistema protheus da totvs. Eu trabalho com instalações de quantidades numerosa e sempre é muito corrido e massante ter que fazer tudo manualmente
