@@ -32,12 +32,12 @@ try:
     pyautogui.press("tab", presses=1, interval=1.0)
     pyautogui.write("Jo@0509_rio")
     pyautogui.press("enter")
-    time.sleep(8)
+    time.sleep(10)
     pyautogui.press("tab", presses=9, interval=0.5)
     pyautogui.write("22")
     pyautogui.press("tab", presses=5, interval=0.5)
     pyautogui.press("enter")
-    time.sleep(8)
+    time.sleep(20)
     pyautogui.press("tab", presses=1, interval=1.0)
     pyautogui.write("QMTA020")
     pyautogui.press("F3")
@@ -47,7 +47,7 @@ try:
     for i in range(0, n):
         
         time.sleep(2.0)
-        pyautogui.write('27588')# Cliente
+        pyautogui.write('N5502436005416')# Cliente
         pyautogui.press('enter',   presses=1, interval=1.0)
         pyautogui.write('00')# Loja do Cliente
         time.sleep(2.0)
@@ -55,7 +55,7 @@ try:
         pyautogui.press('enter',   presses=1, interval=1.0)
         print(i)
         print(seriais[i])
-        pyautogui.write('00')# Loja do Cliente
+        pyautogui.write('00')
         time.sleep(2.0)
         pyautogui.press('tab', presses=5, interval=1.0)
         #time.sleep(2.0)

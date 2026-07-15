@@ -16,7 +16,7 @@ url_totvs = "https://orthoheadinstrumentais119660.protheus.cloudtotvs.com.br:401
 caminho_edge = r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
 
 # arquivo com os seriais a serem incluidos
-with open(r"D:/gitlocal/protheus/seriais.txt","r") as arquivo:
+with open(r"C:/gitlocal/protheus/seriais.txt","r") as arquivo:
     seriais = arquivo.readlines()
 n = len(seriais)
 print(seriais)
@@ -27,7 +27,7 @@ try:
     print("TOTVS WebApp aberto com sucesso!")
         
     # Aguarda alguns segundos para carregar a pagina inicial do app
-    time.sleep(60)
+    time.sleep(20)
     pyautogui.write("jlemos")
     pyautogui.press("tab", presses=1, interval=1.0)
     pyautogui.write("Jo@0509_rio")
@@ -49,51 +49,51 @@ try:
         
         time.sleep(2)
         pyautogui.press('enter',   presses=1, interval=1.0)
-        pyautogui.write('10007A')# Cliente
-        time.sleep(1.5)
-        pyautogui.write('01')# Loja do Cliente
-        time.sleep(1.5)
-        pyautogui.write('001601') # Código do produto
-        time.sleep(2.0)
-        pyautogui.press('tab',   presses=1, interval=2.0)
-        pyautogui.press('2',   presses=1, interval=2.0)
-        time.sleep(2.0)
+        pyautogui.write('10005Z')# Cliente
+        time.sleep(1.0)
+        pyautogui.write('03')# Loja do Cliente
+        time.sleep(1.0)
+        pyautogui.write('001414') # Código do produto
+        time.sleep(1.0)
+        pyautogui.press('tab',   presses=1, interval=1.0)
+        pyautogui.press('2',   presses=1, interval=1.0)
+        time.sleep(1.0)
         #pyautogui.press('tab',   presses=1, interval=1.0)
         pyautogui.write('JORIO') #nome do técnico
-        time.sleep(2.0)
+        time.sleep(1.0)
         #pyautogui.press('tab',   presses=8, interval=1.0)
         pyautogui.press('f2',   presses=1, interval=1.0)
-        time.sleep(1.5)
+        time.sleep(1.0)
         pyautogui.press('right',   presses=1, interval=1.0)
         pyautogui.press('3',   presses=1, interval=1.0)
-        time.sleep(1.5)
-        pyautogui.write('003')
-        time.sleep(1.5)
-        pyautogui.press('f3',   presses=1, interval=8.0)
+        time.sleep(1.0)
+        pyautogui.write('002')
+        time.sleep(1.0)
+        pyautogui.press('f3',   presses=1, interval=6.0)
         pyautogui.press('tab',   presses=4, interval=1.0)
         pyautogui.write(seriais[i])
-        time.sleep(1.5)
+        time.sleep(1.0)
         print(i)
         print(seriais[i])
-        pyautogui.press('enter',   presses=1, interval=3.0)
-        time.sleep(3.0)
-        pyautogui.press('enter',   presses=1, interval=3.0)
-        time.sleep(3.0)
-        pyautogui.press('right',   presses=2, interval=1.0)
-        time.sleep(3.0)
-        pyautogui.write('0005')
-        time.sleep(1.5)
         pyautogui.press('enter',   presses=1, interval=1.0)
-        time.sleep(3.0)
-        pyautogui.press('right',   presses=1, interval=2.0)
-        pyautogui.press('enter',   presses=1, interval=2.0)
-        pyautogui.write('INSTALAÇÃO DO EQUIPAMENTO')
-        time.sleep(1.5)
+        time.sleep(1.0)
+        pyautogui.press('enter',   presses=1, interval=1.0)
+        time.sleep(1.0)
+        pyautogui.press('right',   presses=2, interval=1.0)
+        time.sleep(1.0)
+        pyautogui.write('0003')
+        time.sleep(1.0)
+        pyautogui.press('enter',   presses=1, interval=1.0)
+        time.sleep(1.0)
+        pyautogui.press('right',   presses=1, interval=1.0)
+        pyautogui.press('enter',   presses=1, interval=1.0)
+        pyautogui.write('MANUTENCAO PREVENTIVA')
+        time.sleep(1.0)
         pyautogui.press('tab',   presses=1, interval=1.0)
         pyautogui.press('enter',   presses=1, interval=1.0)
         pyautogui.press('up',   presses=2, interval=1.0)
         pyautogui.hotkey('ctrl','s')
-        time.sleep(5) 
+        time.sleep(7) 
             
     
     print("Login acionado automaticamente.")

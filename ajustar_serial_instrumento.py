@@ -63,7 +63,7 @@ try:
         pyautogui.write(serialatual)
         pyautogui.press("enter", presses=1, interval=1.0)
 
-        pyautogui.write("MONITOR BEIRA LEITO BSM-3763 T")
+        pyautogui.write("VENTILADOR NKV-550 CONFIG. UNI")
         pyautogui.press("enter", presses=1, interval=1.0)
 
         pyautogui.write("30")
@@ -72,7 +72,7 @@ try:
         pyautogui.press("enter", presses=1, interval=1.0)
         time.sleep(2.0)
 
-        pyautogui.write("07042026")
+        pyautogui.write("24032026")
         time.sleep(2.0)
         pyautogui.write("365")
         
