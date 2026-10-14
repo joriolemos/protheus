@@ -25,7 +25,7 @@ print(ordens)
 
 
 # Indique a da data desejada para o registro do atendimento
-date = "22042026"
+date = "31082026"
 
 try:
         # Abre o navegador com a URL
@@ -84,9 +84,9 @@ try:
             print(i)
             time.sleep(2.0)
             
-            if i != 0:
-                  pyautogui.press("enter")
-                  time.sleep(2.0)
+            # if i != 0:
+            #       pyautogui.press("enter")
+            #       time.sleep(2.0)
                
             #pyautogui.press("enter", presses=1, interval=2.0)
             time.sleep(2)
@@ -99,6 +99,8 @@ try:
             
             pyautogui.press("enter", presses=3, interval=2.0)
             pyautogui.write("ATENDIMENTO DE MANUTENCAO PREVENTIVA")
+            pyautogui.press("enter", presses=1, interval=2.0)
+            pyautogui.write("TROCA DA BATERIA INTERNA")
             pyautogui.press("enter", presses=1, interval=2.0)
             pyautogui.write("EQUIPAMENTO EM CONFORMIDADE")
             
@@ -115,33 +117,36 @@ try:
         
             pyautogui.press("down", presses=1, interval=2.0)
             pyautogui.press("right", presses=1, interval=2.0)
-            pyautogui.write("SG04000008")
+            pyautogui.write("SC01000023") #SG04000008
+            time.sleep(1)
             pyautogui.press("enter", presses=3, interval=2.0)
             pyautogui.write("1")
             time.sleep(2)
             pyautogui.press("enter", presses=6, interval=2.0)
-            pyautogui.write("000002")
+            pyautogui.write("000014")
             
             pyautogui.press("down", presses=1, interval=2.0)
             pyautogui.press("right", presses=1, interval=2.0)
-            pyautogui.write("SM01000257")
+            pyautogui.write("H109000102") #SM01000257
+            time.sleep(1)
             pyautogui.press("enter", presses=3, interval=2.0)
             pyautogui.write("1")
             time.sleep(2)
             pyautogui.press("enter", presses=6, interval=2.0)
-            pyautogui.write("000002")
+            pyautogui.write("000014")
             
-            pyautogui.press("down", presses=1, interval=2.0)
-            pyautogui.press("right", presses=1, interval=2.0)
-            pyautogui.write("S002000004")
-            pyautogui.press("enter", presses=3, interval=2.0)
-            pyautogui.write("1")
-            time.sleep(2)
-            pyautogui.press("enter", presses=6, interval=2.0)
-            pyautogui.write("000002")
+            # pyautogui.press("down", presses=1, interval=2.0)
+            # pyautogui.press("right", presses=1, interval=2.0)
+            # pyautogui.write("S002000004")
+            # time.sleep(2)
+            # pyautogui.press("enter", presses=3, interval=2.0)
+            # pyautogui.write("1")
+            # time.sleep(2)
+            # pyautogui.press("enter", presses=6, interval=2.0)
+            # pyautogui.write("000002")
             
             
-            pyautogui.press("up", presses=3, interval=2.0)
+            pyautogui.press("up", presses=2, interval=2.0) #TROCAR PRESSES DE ACORDO QTD PROD
             pyautogui.press("left", presses=7, interval=2.0)
             pyautogui.press("del", presses=1, interval=2.0)
             

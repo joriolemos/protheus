@@ -27,7 +27,7 @@ try:
     print("TOTVS WebApp aberto com sucesso!")
         
     # Aguarda alguns segundos para carregar a pagina inicial do app
-    time.sleep(20)
+    time.sleep(30)
     pyautogui.write("jlemos")
     pyautogui.press("tab", presses=1, interval=1.0)
     pyautogui.write("Jo@0509_rio")
@@ -49,11 +49,11 @@ try:
         
         time.sleep(2)
         pyautogui.press('enter',   presses=1, interval=1.0)
-        pyautogui.write('10005Z')# Cliente
+        pyautogui.write('1005YH')# Cliente
         time.sleep(1.0)
-        pyautogui.write('03')# Loja do Cliente
+        pyautogui.write('02')# Loja do Cliente
         time.sleep(1.0)
-        pyautogui.write('001414') # Código do produto
+        pyautogui.write('001633') # Código do produto
         time.sleep(1.0)
         pyautogui.press('tab',   presses=1, interval=1.0)
         pyautogui.press('2',   presses=1, interval=1.0)
@@ -87,7 +87,7 @@ try:
         time.sleep(1.0)
         pyautogui.press('right',   presses=1, interval=1.0)
         pyautogui.press('enter',   presses=1, interval=1.0)
-        pyautogui.write('MANUTENCAO PREVENTIVA')
+        pyautogui.write('TROCA DA BATERIA INTERNA POR MANUTENCAO PREVENTIVA')
         time.sleep(1.0)
         pyautogui.press('tab',   presses=1, interval=1.0)
         pyautogui.press('enter',   presses=1, interval=1.0)
