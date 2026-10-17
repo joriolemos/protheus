@@ -47,22 +47,22 @@ try:
     for i in range(0, n):
         
         time.sleep(2.0)
-        pyautogui.write('N5502436005416')# Cliente
-        pyautogui.press('enter',   presses=1, interval=1.0)
+        pyautogui.write('N4BF0009032')# Cliente
+        pyautogui.press('tab',   presses=1, interval=0.5)
         pyautogui.write('00')# Loja do Cliente
         time.sleep(2.0)
         pyautogui.write(seriais[i])
-        pyautogui.press('enter',   presses=1, interval=1.0)
+        pyautogui.press('tab',   presses=1, interval=0.5)
         print(i)
         print(seriais[i])
         pyautogui.write('00')
         time.sleep(2.0)
-        pyautogui.press('tab', presses=5, interval=1.0)
+        pyautogui.press('tab', presses=5, interval=0.5)
         #time.sleep(2.0)
         pyautogui.press('enter',   presses=1, interval=1.0)
-        time.sleep(2.0)
+        time.sleep(3.0)
         pyautogui.press('enter',   presses=1, interval=1.0)
-        time.sleep(5.0)
+        time.sleep(6.0)
     
     print("Login acionado automaticamente.")
 except Exception as e:

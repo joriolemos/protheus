@@ -49,25 +49,38 @@ try:
         
         time.sleep(2)
         pyautogui.press('enter',   presses=1, interval=1.0)
-        pyautogui.write('1005YH')# Cliente
+        pyautogui.write('10005Z')# Cliente
         time.sleep(1.0)
-        pyautogui.write('02')# Loja do Cliente
+        pyautogui.write('03')# Loja do Cliente
         time.sleep(1.0)
-        pyautogui.write('001633') # Código do produto
+        pyautogui.write('001656') # Código do produto
         time.sleep(1.0)
         pyautogui.press('tab',   presses=1, interval=1.0)
-        pyautogui.press('2',   presses=1, interval=1.0)
+        pyautogui.press('1',   presses=1, interval=1.0)
         time.sleep(1.0)
         #pyautogui.press('tab',   presses=1, interval=1.0)
         pyautogui.write('JORIO') #nome do técnico
         time.sleep(1.0)
-        #pyautogui.press('tab',   presses=8, interval=1.0)
+        
+        pyautogui.press('tab',   presses=3, interval=1.0)
+        pyautogui.write('00000') #nome do técnico
+        time.sleep(1.0)        
+        
+        pyautogui.press('tab',   presses=1, interval=1.0)
+        time.sleep(1.0)
+
+        pyautogui.press('enter',   presses=1, interval=1.0)
+        time.sleep(1.0)
+
+        pyautogui.write('00000') #nome do técnico
+        time.sleep(1.0)          
+        
         pyautogui.press('f2',   presses=1, interval=1.0)
         time.sleep(1.0)
         pyautogui.press('right',   presses=1, interval=1.0)
         pyautogui.press('3',   presses=1, interval=1.0)
         time.sleep(1.0)
-        pyautogui.write('002')
+        pyautogui.write('003')
         time.sleep(1.0)
         pyautogui.press('f3',   presses=1, interval=6.0)
         pyautogui.press('tab',   presses=4, interval=1.0)
@@ -81,13 +94,13 @@ try:
         time.sleep(1.0)
         pyautogui.press('right',   presses=2, interval=1.0)
         time.sleep(1.0)
-        pyautogui.write('0003')
+        pyautogui.write('0005')
         time.sleep(1.0)
         pyautogui.press('enter',   presses=1, interval=1.0)
         time.sleep(1.0)
         pyautogui.press('right',   presses=1, interval=1.0)
         pyautogui.press('enter',   presses=1, interval=1.0)
-        pyautogui.write('TROCA DA BATERIA INTERNA POR MANUTENCAO PREVENTIVA')
+        pyautogui.write('PROCEDIMENTOS DE LIBERACAO DE EQUIPAMENTOS')
         time.sleep(1.0)
         pyautogui.press('tab',   presses=1, interval=1.0)
         pyautogui.press('enter',   presses=1, interval=1.0)
